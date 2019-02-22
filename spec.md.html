@@ -491,7 +491,7 @@ We provide the lookup tables for download in our Github repository:
 
 ### Diffuse BRDF
 
-The light that hits the surface will either reflect from the specular component or enter the surface, bounce several times in the medium, and leave at a random surface point in a random direction. This results in a diffuse look that is modeled with the diffuse component $B(\mathbf{v}, \mathbf{l})$. The ratio between specular and diffuse reflection is determined by the Fresnel term.
+The incident illumination that hits an object will either be reflected at the surface or enter it and be scattered equally in all directions. The latter results in a diffuse look that is modeled with the diffuse component $B(\mathbf{v}, \mathbf{l})$. The ratio between specular and diffuse reflection is determined by the Fresnel term.
 
 For an energy-preserving and energy-conserving combination of the components we apply the same ideas as for the GGX energy compensation described in Section [Multiple-Scattering GGX BRDFs]. We measure how much energy is left after evaluating the Fresnel-weighted multiple-scattering GGX BRDF and scale the diffuse BRDF accordingly.
 
