@@ -129,7 +129,7 @@ Note that we convert from anisotropic to isotropic roughness $\alpha_{uv}$ to si
 
 ### Diffuse Component
 
-The diffuse contribution of the material is modeled with a simple Lambertian BRDF. Based on the amount of specular contribution from the microfacet components, the diffuse contribution needs to be multiplied with a directional-dependent factor to ensure energy conservation. Following the approach of [#Kel01] and [#KC17], the factor is calculated from the missing energy after specular reflection.
+The diffuse contribution of the material is modeled with a simple Lambertian BRDF. Based on the amount of specular contribution from the microfacet components, the diffuse contribution needs to be multiplied with a directional-dependent factor to ensure energy conservation and energy preservation. Following the approach of [#Kel01] and [#KC17], the factor is calculated from the missing energy after specular reflection.
 
 ![Figure [energycomp-plastic]: Combination of diffuse and specular component with energy compensation for roughness 0 (left) and 1 (right). Note that the combination is energy-conserving (no energy is produced, even at multiple bounces inside the object) and energy-preserving (especially at grazing angles).](img/energycomp_plastic.png)
 
